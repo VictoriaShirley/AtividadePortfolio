@@ -29,7 +29,19 @@
 
 .w-100 {
     width: 100%;
+}
 
+section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1.5rem;
+}
+
+section > h2 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 150%;
+    text-transform: uppercase;
 }
 
 /* Header */
@@ -50,7 +62,7 @@ header h1 {
 }
 
 header nav {
-    display: flex;
+    display: none;
     align-items: center;
     gap: 1.5rem;
 }
@@ -65,9 +77,8 @@ header nav a {
 /* Home */
 
 #home {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    padding: 0;
     height: 700px;
 }
 
@@ -105,19 +116,9 @@ header nav a {
 
 
 #sobre {
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
-    padding: 2rem 1.5rem;
     background-color: var(--clr-black);
     color: var(--clr-white);
-}
-
-#sobre > h2 {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: uppercase;
 }
 
 #sobre > img {
@@ -128,4 +129,31 @@ header nav a {
     display: flex;
     gap: 1.5rem;
     width: 100%;
+}
+
+/* Projetos */
+#projetos {
+    gap: 1.5rem;
+}
+
+.cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+    padding: 1.25rem;
+    border-radius: 4px;
+}
+
+.card > img {
+    width: 100%;
+}
+
+.card > h3 {
+    font-weight: 18px;
+    font-weight: 500;
 }
