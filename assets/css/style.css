@@ -132,6 +132,7 @@ header nav a {
 }
 
 /* Projetos */
+
 #projetos {
     gap: 1.5rem;
 }
@@ -157,3 +158,38 @@ header nav a {
     font-weight: 18px;
     font-weight: 500;
 }
+
+/* Serviços */
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
+.base-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.base-list > li {
+    padding: 1rem;
+    background-color: var(--clr-red);
+    border-radius: 3px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.servicos-list {
+    gap: 1rem;
+}
+
+.conhecimentos-list {
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
